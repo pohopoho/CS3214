@@ -1,0 +1,67 @@
+rt_sigprocmask(SIG_BLOCK, [TTOU], [CHLD], 8) = 0
+ioctl(3, TIOCSPGRP, [14814])            = 0
+ioctl(3, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_UNBLOCK, [TTOU], [CHLD TTOU], 8) = 0
+close(7)                                = 0
+dup2(6, 0)                              = 0
+close(6)                                = 0
+close(4)                                = 0
+close(5)                                = 0
+execve("/home/ugrads/nonmajors/michaelc97/bin/rev", ["rev"], [/* 39 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/courses/cs3214/bin/rev", ["rev"], [/* 39 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/lib64/qt-3.3/bin/rev", ["rev"], [/* 39 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/rev", ["rev"], [/* 39 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/rev", ["rev"], [/* 39 vars */]) = 0
+brk(NULL)                               = 0x1a22000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0beaaa000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=164699, ...}) = 0
+mmap(NULL, 164699, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc0bea81000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20&\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2156160, ...}) = 0
+mmap(NULL, 3985888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc0be4bc000
+mprotect(0x7fc0be67f000, 2097152, PROT_NONE) = 0
+mmap(0x7fc0be87f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c3000) = 0x7fc0be87f000
+mmap(0x7fc0be885000, 16864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc0be885000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0bea80000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0bea7e000
+arch_prctl(ARCH_SET_FS, 0x7fc0bea7e740) = 0
+mprotect(0x7fc0be87f000, 16384, PROT_READ) = 0
+mprotect(0x601000, 4096, PROT_READ)     = 0
+mprotect(0x7fc0beaab000, 4096, PROT_READ) = 0
+munmap(0x7fc0bea81000, 164699)          = 0
+brk(NULL)                               = 0x1a22000
+brk(0x1a43000)                          = 0x1a43000
+brk(NULL)                               = 0x1a43000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=106075056, ...}) = 0
+mmap(NULL, 106075056, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc0b7f92000
+close(3)                                = 0
+rt_sigaction(SIGINT, {0x4011a0, [INT], SA_RESTORER|SA_RESTART, 0x7fc0be4f23b0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, {0x4011a0, [TERM], SA_RESTORER|SA_RESTART, 0x7fc0be4f23b0}, {SIG_DFL, [], 0}, 8) = 0
+open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26254, ...}) = 0
+mmap(NULL, 26254, PROT_READ, MAP_SHARED, 3, 0) = 0x7fc0beaa3000
+close(3)                                = 0
+fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0beaa2000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0bea9e000
+read(0, "hello\n", 4096)                = 6
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0bea9d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc0bea9c000
+write(1, "olleh\n", 6)                  = 6
+read(0, "", 4096)                       = 0
+close(0)                                = 0
+munmap(0x7fc0bea9e000, 16384)           = 0
+munmap(0x7fc0beaa2000, 4096)            = 0
+close(1)                                = 0
+munmap(0x7fc0bea9c000, 4096)            = 0
+munmap(0x7fc0bea9d000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
